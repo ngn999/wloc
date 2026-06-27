@@ -22,8 +22,12 @@ https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.lpx
 **Stash:**
 https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.stoverride
 
+**Shadowrocket:**
+https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.plugin
+
 > Egern 可直接使用 Surge 模块
 > Stash 请直接订阅上面的 `.stoverride`，无需用 Script Hub 转换
+> Shadowrocket 无模块参数面板，默认坐标内置在文件中；推荐使用快捷指令或选点页面储存坐标，脚本会优先读取持久化存储中的值
 
 ---
 
@@ -141,6 +145,7 @@ https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.stove
 - **Surge** — 脚本编辑器运行: `$persistentStore.write(null, "wloc_settings")`
 - **Quantumult X** — 运行: `$prefs.removeValueForKey("wloc_settings")`
 - **Loon** — 运行: `$persistentStore.write(null, "wloc_settings")`
+- **Shadowrocket** — 运行: `$persistentStore.write(null, "wloc_settings")`
 
 清除后重启设备即可恢复真实定位。无需关闭模块，脚本会自动检测到无自定义坐标并跳过修改。
 
